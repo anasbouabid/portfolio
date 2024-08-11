@@ -1,31 +1,44 @@
-#header {
-  background-color: var(--gray);
-  border: .1px solid var(--white);
-  padding: 10px;
-  border-radius: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: fit-content;
-  gap: 15px;
+#services {
+  .service-item {
+    background: var(--gray);
+    padding: 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 10px;
 
-  h1 {
-    font-size: 2rem;
-    font-weight: 900;
-  }
+    .icon {
+      background-color: var(--black);
+      border: 0.25px solid var(--white);
+      padding: 10px;
+      border-radius: 50%;
+      margin-top: -2rem;
 
-  .header-item {
-    width: 100px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 100px;
-
-    &:hover {
-      background: var(--black);
+      svg {
+        font-size: 2.2rem;
+      }
     }
 
-    &.active {
-      background: var(--green);
+    hr {
+      width: 15%;
+      border-color: var(--green);
+      border-top-width: 2px;
+      border-radius: 50px;
+      margin-top: .30rem;
+    }
+
+    h4 {
+      color: var(--white);
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-top: 0.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 1.3rem;
     }
   }
 }
